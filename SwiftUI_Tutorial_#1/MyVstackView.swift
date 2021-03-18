@@ -12,13 +12,13 @@ struct MyVstackView: View {
         VStack{
             Text("1!")
                 .fontWeight(.bold)
-                .font(.largeTitle)
+                .font(.system(size: 60))
             Text("2!")
-                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                .font(.largeTitle)
+                .fontWeight(.bold)
+                .font(.system(size: 60))
             Text("3!")
-                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                .font(.largeTitle)
+                .fontWeight(.bold)
+                .font(.system(size: 60))
         } // Vstack
             .background(Color.red)
     }
