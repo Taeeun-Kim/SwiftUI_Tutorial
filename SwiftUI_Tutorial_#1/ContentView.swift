@@ -13,6 +13,8 @@ struct ContentView: View {
             MyVstackView()
             MyVstackView()
             MyVstackView()
+            MyVstackView()
+            MyVstackView()
         } // Hstack
             .padding(10.0) // top, bottom, leading(left), right(
             .background(Color.yellow)
