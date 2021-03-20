@@ -9,6 +9,16 @@ import SwiftUI
 
 struct MyTextView: View {
     
+    // binding data
+    @Binding
+    var isActivated: Bool
+    
+    // Constructor
+    init(isActivated: Binding<Bool> =
+            .constant(false)){
+        _isActivated = isActivated
+    }
+    
     //@State 값의 변화를 감지 -> 뷰에 적용
     @State
     private var index: Int = 0
@@ -22,7 +32,6 @@ struct MyTextView: View {
         Color.orange
         ]
     
-    
     var body: some View{
         VStack{
             Spacer()
@@ -31,7 +40,13 @@ struct MyTextView: View {
                 .font(.system(size: 30))
                 .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                 .frame(minWidth: 0, maxWidth: .infinity,
-                       minHeight: 0, maxHeight: .infinity)
+                       minHeight: 0, maxHeight: 100)
+            Text("Active state: \(String(isActivated))")
+                .font(.system(size: 30))
+                .fontWeight(.bold)
+                .foregroundColor(self.isActivated ?
+                    Color.yellow : Color.gray)
+                .background(Color.black)
             
             Spacer()
         }.background(backgroundColors[index])

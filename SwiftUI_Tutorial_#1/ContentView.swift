@@ -18,9 +18,9 @@ struct ContentView: View {
         NavigationView{
             VStack{
                 HStack{
-                    MyVstackView()
-                    MyVstackView()
-                    MyVstackView()
+                    MyVstackView(isActivated: $isActivated)
+                    MyVstackView(isActivated: $isActivated)
+                    MyVstackView(isActivated: $isActivated)
                 } // HStack
                 .padding(isActivated ? 50.0 : 10.0) // top, bottom, leading(left), right(
                 .background(isActivated ? Color.yellow : Color.black)
@@ -37,7 +37,7 @@ struct ContentView: View {
                 } // HStack
                 
                 // Navigation button(link)
-                NavigationLink(destination: MyTextView()){
+                NavigationLink(destination: MyTextView(isActivated: $isActivated)){
                     Text("Navigation")
                         .font(.system(size: 40))
                         .fontWeight(.bold)
