@@ -9,8 +9,10 @@ import SwiftUI
 
 struct MyProjectCard: View {
     var body: some View{
-        VStack(alignment: .leading){
+        VStack(alignment: .leading, spacing: 0){
+            
             Rectangle().frame(height: 0)
+            
             Text("Taeeun Jessica Estelle Project")
                 .font(.system(size: 23))
                 .fontWeight(.bold)
@@ -19,18 +21,31 @@ struct MyProjectCard: View {
                 .foregroundColor(.secondary)
             Spacer().frame(height: 20)
             HStack{
-                Circle().frame(width: 50, height: 50)
-                Circle().frame(width: 50, height: 50)
-                Circle().frame(width: 50, height: 50)
+                Image("11")
+                    .resizable() // 밑에 프레임에 맞게 리사이즈
+                    .frame(width: 50, height: 50)
+                    .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                    .overlay(
+                        Circle().stroke(lineWidth: 5)
+                            .foregroundColor(.orange)
+                    )
+                Image("12")
+                    .resizable()
+                    .frame(width: 50, height: 50)
+                    .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                Image("64")
+                    .resizable()
+                    .frame(width: 50, height: 50)
+                    .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
                 
                 Spacer()
                 
-                Text("OK")
+                Text("OK") // Button
                     .foregroundColor(.white)
                     .padding()
+                    .frame(width: 80)
                     .background(Color.blue)
                     .cornerRadius(20)
-                    
             }
         }
         .padding(30)
