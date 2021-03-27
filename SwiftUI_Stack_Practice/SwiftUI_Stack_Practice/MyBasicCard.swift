@@ -13,7 +13,7 @@ struct MyBasicCard: View {
             
             Image(systemName: "flag.fill")
                 .frame(width: 50, height: 50)
-                .foregroundColor(.purple)
+                .foregroundColor(.orange)
                 .font(.system(size: 40))
                 .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
             

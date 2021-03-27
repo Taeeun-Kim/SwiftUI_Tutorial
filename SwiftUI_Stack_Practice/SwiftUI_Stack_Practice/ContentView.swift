@@ -10,12 +10,23 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack(alignment: .bottomTrailing){
-            VStack{
+            VStack(alignment: .leading, spacing: 10){
+                
+                HStack{
+                    Image(systemName: "line.horizontal.3")
+                        .font(.largeTitle)
+                    Spacer()
+                    Image(systemName: "person.crop.circle.fill")
+                        .font(.largeTitle)
+                }
+                .padding(.horizontal, 20)
+                .padding(.top, 20)
                 
                 Text("Game List")
                     .font(.system(size: 40))
                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                     .foregroundColor(.blue)
+                    .padding(.horizontal)
                 
                 ScrollView{
                     VStack{
@@ -26,8 +37,7 @@ struct ContentView: View {
                         MyBasicCard()
                         MyBasicCard()
                         MyBasicCard()
-                    }
-                    .padding()
+                    }.padding(.horizontal)
                 }
 
             }
