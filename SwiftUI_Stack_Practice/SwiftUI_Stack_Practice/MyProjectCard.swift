@@ -9,9 +9,33 @@ import SwiftUI
 
 struct MyProjectCard: View {
     var body: some View{
-        VStack{
+        VStack(alignment: .leading){
+            Rectangle().frame(height: 0)
             Text("Taeeun Jessica Estelle Project")
+                .font(.system(size: 23))
+                .fontWeight(.bold)
+                .padding(.bottom, 5)
+            Text("10 AM - 12 AM")
+                .foregroundColor(.secondary)
+            Spacer().frame(height: 20)
+            HStack{
+                Circle().frame(width: 50, height: 50)
+                Circle().frame(width: 50, height: 50)
+                Circle().frame(width: 50, height: 50)
+                
+                Spacer()
+                
+                Text("OK")
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(Color.blue)
+                    .cornerRadius(20)
+                    
+            }
         }
+        .padding(30)
+        .background(Color.yellow)
+        .cornerRadius(20)
     }
 }
 
