@@ -12,9 +12,10 @@ struct MyBasicCard: View {
         HStack(){
             
             Image(systemName: "flag.fill")
-                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
-                .foregroundColor(.white)
+                .frame(width: 50, height: 50)
+                .foregroundColor(.purple)
                 .font(.system(size: 40))
+                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
             
             VStack(alignment: .leading, spacing: 0){
                 Divider().opacity(0)
@@ -28,7 +29,7 @@ struct MyBasicCard: View {
             }
         }
         .padding(20)
-        .background(Color.yellow)
+        .background(Color.green)
         .cornerRadius(20)
     }
 }
