@@ -13,7 +13,7 @@ struct MyProjectCard: View {
             
             Rectangle().frame(height: 0)
             
-            Text("Taeeun Jessica Estelle Project")
+            Text("Nintendo Switch")
                 .font(.system(size: 23))
                 .fontWeight(.bold)
                 .padding(.bottom, 5)
@@ -48,7 +48,7 @@ struct MyProjectCard: View {
                     .cornerRadius(20)
             }
         }
-        .padding(30)
+        .padding(20)
         .background(Color.yellow)
         .cornerRadius(20)
     }
