@@ -31,11 +31,10 @@ struct ContentView: View {
                 ScrollView{
                     VStack{
                         MyProjectCard()
+                        MyCard(icon: "doc.fill", title: "Monster Hunter World", start: "10 AM", end: "12 AM", bgColor: Color.blue)
+                        MyCard(icon: "tray.fill", title: "Monster Hunter Rise", start: "10 AM", end: "12 AM", bgColor: Color.red)
                         MyBasicCard()
-                        MyBasicCard()
-                        MyBasicCard()
-                        MyBasicCard()
-                        MyBasicCard()
+                        MyCard(icon: "doc.fill", title: "Monster Hunter Iceborn", start: "10 AM", end: "12 AM", bgColor: Color.purple)
                         MyBasicCard()
                     }.padding(.horizontal)
                 }

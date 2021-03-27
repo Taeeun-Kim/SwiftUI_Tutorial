@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct MyProjectCard: View {
+    
+    @State var shouldShowAlert: Bool = false
+    
     var body: some View{
         VStack(alignment: .leading, spacing: 0){
             
@@ -40,12 +43,20 @@ struct MyProjectCard: View {
                 
                 Spacer()
                 
-                Text("OK") // Button
-                    .foregroundColor(.white)
-                    .padding()
-                    .frame(width: 80)
-                    .background(Color.blue)
-                    .cornerRadius(20)
+                Button(action: {
+                    print("OK Button is clicked")
+                    self.shouldShowAlert = true
+                }, label: {
+                    Text("OK") // Button
+                        .foregroundColor(.white)
+                        .padding()
+                        .frame(width: 80)
+                        .background(Color.blue)
+                        .cornerRadius(20)
+                }).alert(isPresented: $shouldShowAlert){
+                    Alert(title: Text("This is a notification"))
+                }
+                
             }
         }
         .padding(20)

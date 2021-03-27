@@ -7,11 +7,18 @@
 
 import SwiftUI
 
-struct MyBasicCard: View {
+struct MyCard: View {
+    
+    var icon: String
+    var title: String
+    var start: String
+    var end: String
+    var bgColor: Color
+    
     var body: some View{
         HStack(){
             
-            Image(systemName: "flag.fill")
+            Image(systemName: icon)
                 .frame(width: 50, height: 50)
                 .foregroundColor(.white)
                 .font(.system(size: 40))
@@ -19,23 +26,23 @@ struct MyBasicCard: View {
             
             VStack(alignment: .leading, spacing: 0){
                 Divider().opacity(0)
-                Text("Monster Hunter Rise")
+                Text(title)
                     .font(.system(size: 23))
                     .foregroundColor(.white)
                     .fontWeight(.bold)
                     .padding(.bottom, 5)
-                Text("10 AM - 12 AM")
+                Text("\(start) - \(end)")
                     .foregroundColor(.white)
             }
         }
         .padding(20)
-        .background(Color.green)
+        .background(bgColor)
         .cornerRadius(20)
     }
 }
 
-struct MyBasicCard_Previews: PreviewProvider {
+struct MyCard_Previews: PreviewProvider {
     static var previews: some View {
-        MyBasicCard()
+        MyCard(icon: "doc.fill", title: "Monster Hunter World", start: "10 AM", end: "12 AM", bgColor: Color.blue)
     }
 }
