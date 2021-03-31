@@ -14,8 +14,10 @@
 		5A04311A260E71C600037E4F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A043119260E71C600037E4F /* Preview Assets.xcassets */; };
 		5A04311D260E71C600037E4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A04311B260E71C600037E4F /* LaunchScreen.storyboard */; };
 		5A043126260E721000037E4F /* MyProjectCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A043125260E721000037E4F /* MyProjectCard.swift */; };
+		5A110FD226148B040093C7C7 /* MyWebview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A110FD126148B040093C7C7 /* MyWebview.swift */; };
 		5A2AD36A2613151200896F0E /* MyNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2AD3692613151200896F0E /* MyNavigationView.swift */; };
 		5A2B706A260F7D4F004D4194 /* MyBasicCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2B7069260F7D4F004D4194 /* MyBasicCard.swift */; };
+		5A804B072614821500777ED3 /* MyProfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A804B062614821500777ED3 /* MyProfil.swift */; };
 		5AB34A4F260FF3E500934B2C /* MyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB34A4E260FF3E500934B2C /* MyCard.swift */; };
 		5AC60B8A2611EA3500D369F4 /* MyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC60B892611EA3500D369F4 /* MyList.swift */; };
 /* End PBXBuildFile section */
@@ -30,8 +32,10 @@
 		5A04311C260E71C600037E4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A04311E260E71C600037E4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A043125260E721000037E4F /* MyProjectCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProjectCard.swift; sourceTree = "<group>"; };
+		5A110FD126148B040093C7C7 /* MyWebview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWebview.swift; sourceTree = "<group>"; };
 		5A2AD3692613151200896F0E /* MyNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNavigationView.swift; sourceTree = "<group>"; };
 		5A2B7069260F7D4F004D4194 /* MyBasicCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBasicCard.swift; sourceTree = "<group>"; };
+		5A804B062614821500777ED3 /* MyProfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfil.swift; sourceTree = "<group>"; };
 		5AB34A4E260FF3E500934B2C /* MyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCard.swift; sourceTree = "<group>"; };
 		5AC60B892611EA3500D369F4 /* MyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,6 +82,8 @@
 				5AB34A4E260FF3E500934B2C /* MyCard.swift */,
 				5AC60B892611EA3500D369F4 /* MyList.swift */,
 				5A2AD3692613151200896F0E /* MyNavigationView.swift */,
+				5A804B062614821500777ED3 /* MyProfil.swift */,
+				5A110FD126148B040093C7C7 /* MyWebview.swift */,
 			);
 			path = SwiftUI_Stack_Practice;
 			sourceTree = "<group>";
@@ -164,10 +170,12 @@
 				5A2B706A260F7D4F004D4194 /* MyBasicCard.swift in Sources */,
 				5A2AD36A2613151200896F0E /* MyNavigationView.swift in Sources */,
 				5A043126260E721000037E4F /* MyProjectCard.swift in Sources */,
+				5A804B072614821500777ED3 /* MyProfil.swift in Sources */,
 				5A043113260E71C400037E4F /* SceneDelegate.swift in Sources */,
 				5A043115260E71C400037E4F /* ContentView.swift in Sources */,
 				5AC60B8A2611EA3500D369F4 /* MyList.swift in Sources */,
 				5AB34A4F260FF3E500934B2C /* MyCard.swift in Sources */,
+				5A110FD226148B040093C7C7 /* MyWebview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

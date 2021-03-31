@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var isNavigationBarHidden: Bool = false
+//    @State var isNavigationBarHidden: Bool = false
 
     var body: some View {
         
@@ -19,15 +19,23 @@ struct ContentView: View {
                     HStack{
                         
                         NavigationLink(
-                            destination: MyList(isNavigationBarHidden: self.$isNavigationBarHidden),
+                            destination: MyList(/*isNavigationBarHidden: self.$isNavigationBarHidden*/),
                             label: {
                                 Image(systemName: "line.horizontal.3")
                                     .font(.largeTitle)
                                     .foregroundColor(.black)
                             })
+                        
                         Spacer()
-                        Image(systemName: "person.crop.circle.fill")
-                            .font(.largeTitle)
+                        
+                        NavigationLink(
+                            destination: MyProfil(),
+                            label: {
+                                Image(systemName: "gear")
+                                    .font(.largeTitle)
+                                    .foregroundColor(.black)
+                            }
+                        )
                     }
                     .padding(.horizontal, 20)
                     .padding(.top, 20)
@@ -65,10 +73,12 @@ struct ContentView: View {
             } // ZStack
             
 //            .navigationBarTitle("Main")
-            .navigationBarHidden(self.isNavigationBarHidden)
-            .onAppear{
-                self.isNavigationBarHidden = true
-            }
+            
+            .navigationBarHidden(true)
+//            .navigationBarHidden(self.isNavigationBarHidden)
+//            .onAppear{
+//                self.isNavigationBarHidden = true
+//            }
             
         } // NavigationView
     }
