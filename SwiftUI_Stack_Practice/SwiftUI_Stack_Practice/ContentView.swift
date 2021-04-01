@@ -42,7 +42,7 @@ struct ContentView: View {
                     
                     Text("Game List")
                         .font(.system(size: 40))
-                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.bold)
                         .foregroundColor(.blue)
                         .padding(.horizontal)
                     
@@ -56,7 +56,7 @@ struct ContentView: View {
                             MyBasicCard()
                         }.padding(.horizontal)
                     }
-
+                    
                 }
                 
                 Circle()
@@ -67,18 +67,18 @@ struct ContentView: View {
                             .font(.system(size: 30))
                     )
                     .foregroundColor(.white)
-                
+                    
                     .padding(8)
                     .shadow(radius: 20)
             } // ZStack
             
-//            .navigationBarTitle("Main")
+            //            .navigationBarTitle("Main")
             
             .navigationBarHidden(true)
-//            .navigationBarHidden(self.isNavigationBarHidden)
-//            .onAppear{
-//                self.isNavigationBarHidden = true
-//            }
+            //            .navigationBarHidden(self.isNavigationBarHidden)
+            //            .onAppear{
+            //                self.isNavigationBarHidden = true
+            //            }
             
         } // NavigationView
     }
