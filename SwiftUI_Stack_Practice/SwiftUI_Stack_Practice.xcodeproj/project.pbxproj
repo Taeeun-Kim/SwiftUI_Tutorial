@@ -17,6 +17,7 @@
 		5A110FD226148B040093C7C7 /* MyWebview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A110FD126148B040093C7C7 /* MyWebview.swift */; };
 		5A2AD36A2613151200896F0E /* MyNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2AD3692613151200896F0E /* MyNavigationView.swift */; };
 		5A2B706A260F7D4F004D4194 /* MyBasicCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2B7069260F7D4F004D4194 /* MyBasicCard.swift */; };
+		5A7198172616593500BDF4A0 /* MyGeometryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7198162616593500BDF4A0 /* MyGeometryReader.swift */; };
 		5A804B072614821500777ED3 /* MyProfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A804B062614821500777ED3 /* MyProfil.swift */; };
 		5AB34A4F260FF3E500934B2C /* MyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB34A4E260FF3E500934B2C /* MyCard.swift */; };
 		5AC60B8A2611EA3500D369F4 /* MyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC60B892611EA3500D369F4 /* MyList.swift */; };
@@ -35,6 +36,7 @@
 		5A110FD126148B040093C7C7 /* MyWebview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWebview.swift; sourceTree = "<group>"; };
 		5A2AD3692613151200896F0E /* MyNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNavigationView.swift; sourceTree = "<group>"; };
 		5A2B7069260F7D4F004D4194 /* MyBasicCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBasicCard.swift; sourceTree = "<group>"; };
+		5A7198162616593500BDF4A0 /* MyGeometryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGeometryReader.swift; sourceTree = "<group>"; };
 		5A804B062614821500777ED3 /* MyProfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfil.swift; sourceTree = "<group>"; };
 		5AB34A4E260FF3E500934B2C /* MyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCard.swift; sourceTree = "<group>"; };
 		5AC60B892611EA3500D369F4 /* MyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyList.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				5A2AD3692613151200896F0E /* MyNavigationView.swift */,
 				5A804B062614821500777ED3 /* MyProfil.swift */,
 				5A110FD126148B040093C7C7 /* MyWebview.swift */,
+				5A7198162616593500BDF4A0 /* MyGeometryReader.swift */,
 			);
 			path = SwiftUI_Stack_Practice;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A7198172616593500BDF4A0 /* MyGeometryReader.swift in Sources */,
 				5A043111260E71C400037E4F /* AppDelegate.swift in Sources */,
 				5A2B706A260F7D4F004D4194 /* MyBasicCard.swift in Sources */,
 				5A2AD36A2613151200896F0E /* MyNavigationView.swift in Sources */,
