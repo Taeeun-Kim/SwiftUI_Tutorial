@@ -75,7 +75,7 @@ struct MyProfil: View {
                 label: {
                     Image(systemName: "gear")
                         .font(.largeTitle)
-                        .foregroundColor(.black)
+//                        .foregroundColor(.black)
                 })
         )
         

@@ -23,7 +23,7 @@ struct ContentView: View {
                             label: {
                                 Image(systemName: "line.horizontal.3")
                                     .font(.largeTitle)
-                                    .foregroundColor(.black)
+//                                    .foregroundColor(.black)
                             })
                         
                         Spacer()
@@ -33,7 +33,7 @@ struct ContentView: View {
                             label: {
                                 Image(systemName: "gear")
                                     .font(.largeTitle)
-                                    .foregroundColor(.black)
+//                                    .foregroundColor(.black)
                             }
                         )
                     }
